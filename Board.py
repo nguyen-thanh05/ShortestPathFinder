@@ -11,10 +11,10 @@ class Board:
         self.board[self.x][self.y] = "X"
         self.board[self.destination_x][self.destination_y] = "D"
     
-    def getCoordinate(self) -> Tuple(int, int):
+    def getCoordinate(self) -> Tuple[int, int]:
         return self.x, self.y
     
-    def getDestinationCoordinate(self) -> Tuple(int, int):
+    def getDestinationCoordinate(self) -> Tuple[int, int]:
         return self.destination_x, self.destination_y
     
     def getBoard(self):
