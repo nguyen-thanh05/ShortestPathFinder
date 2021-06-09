@@ -1,5 +1,11 @@
 from Board import Board
 
-board = Board()
+def main():
+    board = Board()
 
-print(board)
+    print(board)
+    print(board.getManhattanDistance())
+
+if __name__ == '__main__':
+    main()
+    

@@ -21,6 +21,12 @@ class Board:
     def getDestinationCoordinate(self) -> Tuple[int, int]:
         return self.destination_x, self.destination_y
     
+    def getManhattanDistance(self) -> int:
+        x, y = self.getCoordinate()
+        destination_x, destination_y = self.getDestinationCoordinate()
+        
+        return (destination_x - x) + (destination_y - y)
+        
     def getBoard(self):
         return self.board
     
