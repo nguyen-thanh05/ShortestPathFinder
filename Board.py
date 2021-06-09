@@ -1,5 +1,5 @@
 from typing import Tuple
-
+from math import *
 
 class Board:
     def __init__(self) -> None:
@@ -25,7 +25,7 @@ class Board:
         x, y = self.getCoordinate()
         destination_x, destination_y = self.getDestinationCoordinate()
         
-        return (destination_x - x) + (destination_y - y)
+        return abs(destination_x - x) + abs(destination_y - y)
         
     def getBoard(self):
         return self.board
